@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in LateX
+% Author : Kingshuk Sadhu
+% License : IIT Kgp
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Kingshuk Sadhu}} & Email: \href{mailto:kingshuksadhu1999@gmail.com}{\textcolor{blue}{kingshuksadhu1999@gmail.com}}\\
+  LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{https://www.linkedin.com/in/visit-kingshuksadhu/}} 
+  & Mobile: \href{tel:+918597292797}{\textcolor{blue}{8597292797}} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur}{CGPA: 9.16/10}
+      {M.Tech in Instrumentation and Signal Processing}{Sep 2020 -- May 2022}
+    \resumeSubheading
+      {Jadavpur University, Kolkata}{CGPA: 9.15/10}
+      {B.E. in Electrical Engineering}{Jul 2016 -- Aug 2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Enphase Solar Energy Pvt. Ltd.}{Bangalore, India}
+      {Software Engineer}{Jul 2022 -- Present}
+      % {\\[1\baselineskip]}
+      % {\textbf{Technologies} - Java, Spring Boot, MongoDB, AWS, Redis}
+      \resumeItemListStart
+        \item\small
+          {Automated a business requirement to generate a monthly report on the average discharge energy for ELRP (Emergency Load Reduction Program) and DSGS (Demand Side Grid Support) programs. This was implemented using a \textbf{Quartz scheduler}. Reports are uploaded to the \textbf{SFTP} server and \textbf{AWS S3} storage.}
+          \item\small
+          {Designed and led the development of a new feature - \textbf{site control}, that enables users to create multi-asset events driven by an intelligent algorithm. Asynchronous queues and topics (\textbf{AWS SQS} and \textbf{SNS}) are utilized to create real-time events.}
+        \item\small
+          {Designed and led the development of a Notification Service. Used \textbf{asynchronous} messaging (using \textbf{AWS SQS} and \textbf{SNS}) between API servers and notification service. The notifications are filtered according to user preferences for both \textbf{emails} and in-app \textbf{alerts}. Collaborated with Product Manager to understand the requirements and DevOps team for infrastructure setup.}
+        \item\small
+          {Successfully optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing the P95 latency of one API from 2 seconds to under 200 ms.  Achievements were accomplished by employing various optimization techniques, including minimizing the number of database calls by enhancing the MongoDB \textbf{queries} and creating \textbf{indexes}, introducing \textbf{multi-threading} and \textbf{parallel processing}, implementing \textbf{pagination} and adding a caching layer for \textbf{RBAC} list using \textbf{Redis}.}
+        \item\small
+          {Designed and implemented \textbf{Dynamic Form} that stores metadata about a program’s form. The form’s properties can be configured by the admin. This has reduced the onboarding time for new partners.}
+        \item\small
+          {Devised a new git branching strategy to accommodate \textbf{parallel program releases} into production.}
+        \item\small
+          {Committed to writing clean, maintainable, readable, \textbf{SOLID}-compliant code that is unit tested, with a focus on efficiency and scalability.}
+        \item\small
+          {\textbf{Technologies used} - Java, Spring Boot, MongoDB, AWS, Redis.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  %-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Java, C++, Python, Javascript}
+    \resumeSubItem{Technologies}
+      {AWS, Spring Boot, Spring MVC, MongoDB, Redis, Git, Kubernetes, Jenkins, Datadog, Pytorch, React.js(Basic), Node.js(Basic), Express.js(Basic), Socket.io(Basic)}
+    \resumeSubItem{Others}
+      {RESTful APIs, OOP, Data Structure, Algorithm}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{\textit{Discussion Forum} (\href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{\textcolor{blue}{Github}}, \href{https://question-answer-forum-doconnect.onrender.com}{\textcolor{blue}{Render.com}})}
+      {Developed a question-answer-forum website called DoConnect. The frontend was built using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{JavaScript} and \textbf{React.js}, while the backend was implemented with \textbf{Node.js} and the \textbf{Express.js} framework. \textbf{MongoDB} serves as the database. Additionally, the app includes a chat feature, which was created using \textbf{Socket.io}.}
+    % {\\[1\baselineskip]}
+    \resumeSubItem{\textit{Pizza Store} (\href{https://github.com/Kingshuk99/pizza-store}{\textcolor{blue}{Github}}, \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}})}
+      {Developed a Website for a Pizza store using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{Javascript} and \textbf{React.js}. A JSON server was utilized to store data and create mock APIs. \textbf{Role-Based Access Control (RBAC)} was implemented to manage access for both admin and user roles.}
+    % {\\[1\baselineskip]}
+    \resumeSubItem{\textit{Chat Application} (\href{https://github.com/Kingshuk99/simple-chat-app}{\textcolor{blue}{Github}})}
+      {Developed a simple real-time chat application using \textbf{React.js}, \textbf{JavaScript}, and \textbf{CSS} for frontend. The backend was built using \textbf{Node.js} and \textbf{Express.js}, with real-time communication enabled through \textbf{Socket.io}.}
+    % {\\[1\baselineskip]}
+    \resumeSubItem{\textit{Model Verifiability in Federated Learning} (\href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning-}{\textcolor{blue}{Github}})}
+      {In \textbf{Federated Learning}, the vanilla federated averaging algorithm performs poorly when malicious clients are present. Here, a stochastic federated averaging technique has been implemented which can detect and reduce the effects of malicious clients while aggregating the models in the server. Used technologies - \textbf{Python}, \textbf{Pytorch}, \textbf{Deep learning}.}
+  \resumeSubHeadingListEnd
+  
+%-------------------------------------------
+\end{document}
+

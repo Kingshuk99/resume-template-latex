@@ -145,7 +145,7 @@
     \resumeSubItem{Languages}
       {Java, C++, Python, Javascript}
     \resumeSubItem{Technologies}
-      {AWS, Spring Boot, Spring MVC, MongoDB, Redis, Git, Kubernetes, Jenkins, Datadog, Pytorch, React.js(Basic), Node.js(Basic), Express.js(Basic), Socket.io(Basic)}
+      {AWS, Spring Boot, Spring MVC, MongoDB, Redis, Git, Kubernetes, Jenkins, Datadog, Jmeter, Pytorch, React.js(Basic), Node.js(Basic), Express.js(Basic), Socket.io(Basic)}
     \resumeSubItem{Others}
       {RESTful APIs, OOP, Data Structure, Algorithm}
   \resumeSubHeadingListEnd
@@ -168,4 +168,3 @@
   
 %-------------------------------------------
 \end{document}
-

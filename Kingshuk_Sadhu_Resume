@@ -17,6 +17,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{amssymb}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -90,81 +92,128 @@
 
 
 \begin{document}
-
+%   {\raisebox{-0.35ex}{\includegraphics[width=2.5ex]{LinkedIn-InBug-2C}}
+% linked.in/johndoe} \\
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Kingshuk Sadhu}} & Email: \href{mailto:kingshuksadhu1999@gmail.com}{\textcolor{blue}{kingshuksadhu1999@gmail.com}}\\
-  LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{https://www.linkedin.com/in/visit-kingshuksadhu/}} 
-  & Mobile: \href{tel:+918597292797}{\textcolor{blue}{8597292797}} \\
+  \textbf{{\Large Kingshuk Sadhu}}
+  & \color{blue} \faIcon{envelope} \href{mailto:kingshuksadhu1999@gmail.com}{{kingshuksadhu1999@gmail.com}}\\
+  \color{blue} \faIcon{globe} \href{https://kingshuk-sadhu.tech/}{{kingshuk-sadhu.tech}}
+  & \color{blue} \faIcon{linkedin} \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{{visit-kingshuksadhu}} \\
+  \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99}{Kingshuk99} 
+  & \color{blue} \faIcon{phone} \href{tel:+918597292797}{{+91-8597292797}} \\
 \end{tabular*}
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Indian Institute of Technology, Kharagpur}{CGPA: 9.16/10}
-      {M.Tech in Instrumentation and Signal Processing}{Sep 2020 -- May 2022}
-    \resumeSubheading
-      {Jadavpur University, Kolkata}{CGPA: 9.15/10}
-      {B.E. in Electrical Engineering}{Jul 2016 -- Aug 2020}
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Enphase Solar Energy Pvt. Ltd.}{Bangalore, India}
+      {Enphase Energy}{Bangalore, India}
       {Software Engineer}{Jul 2022 -- Present}
       % {\\[1\baselineskip]}
       % {\textbf{Technologies} - Java, Spring Boot, MongoDB, AWS, Redis}
       \resumeItemListStart
         \item\small
-          {Automated a business requirement to generate a monthly report on the average discharge energy for ELRP (Emergency Load Reduction Program) and DSGS (Demand Side Grid Support) programs. This was implemented using a \textbf{Quartz scheduler}. Reports are uploaded to the \textbf{SFTP} server and \textbf{AWS S3} storage.}
+          {Automated a business requirement to generate a monthly report on the average discharge energy for Grid Services programs using a \textbf{Quartz scheduler}. Reports are uploaded to the \textbf{SFTP} server and \textbf{AWS S3} storage.}
           \item\small
-          {Designed and led the development of a new feature - \textbf{site control}, that enables users to create multi-asset events driven by an intelligent algorithm. Asynchronous queues and topics (\textbf{AWS SQS} and \textbf{SNS}) are utilized to create real-time events.}
+          {Designed and led the development of \textbf{site-control} feature to enables users to create multi-asset events driven by an intelligent algorithm. \textbf{Asynchronous} queues and topics (\textbf{AWS SQS} and \textbf{SNS}) are used to create real-time events.}
         \item\small
-          {Designed and led the development of a Notification Service. Used \textbf{asynchronous} messaging (using \textbf{AWS SQS} and \textbf{SNS}) between API servers and notification service. The notifications are filtered according to user preferences for both \textbf{emails} and in-app \textbf{alerts}. Collaborated with Product Manager to understand the requirements and DevOps team for infrastructure setup.}
+          {Designed and led the development of a Notification Service. Used \textbf{asynchronous} messaging (using \textbf{AWS SQS} and \textbf{SNS}) between API servers and notification service. The notifications are filtered according to user preferences for both \textbf{emails} and in-app \textbf{alerts}.}
         \item\small
-          {Successfully optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing the P95 latency of one API from 2 seconds to under 200 ms.  Achievements were accomplished by employing various optimization techniques, including minimizing the number of database calls by enhancing the MongoDB \textbf{queries} and creating \textbf{indexes}, introducing \textbf{multi-threading} and \textbf{parallel processing}, implementing \textbf{pagination} and adding a caching layer for \textbf{RBAC} list using \textbf{Redis}.}
+          {Successfully optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing their P95 latencies under 200 ms.}
+        \item\small
+          {Integrated \textbf{Redis} as a caching layer for Role-Based Access Control (\textbf{RBAC}) lists in microservices to optimize latency, alongside database \textbf{query optimization}, \textbf{indexing} and \textbf{pagination}.}
         \item\small
           {Designed and implemented \textbf{Dynamic Form} that stores metadata about a program’s form. The form’s properties can be configured by the admin. This has reduced the onboarding time for new partners.}
         \item\small
-          {Devised a new git branching strategy to accommodate \textbf{parallel program releases} into production.}
-        \item\small
-          {Committed to writing clean, maintainable, readable, \textbf{SOLID}-compliant code that is unit tested, with a focus on efficiency and scalability.}
-        \item\small
-          {\textbf{Technologies used} - Java, Spring Boot, MongoDB, AWS, Redis.}
+          {Upgraded two microservices from Spring Boot 2 to Spring Boot 3.}
+        % \item\small
+        %   {Devised a new git branching strategy to accommodate \textbf{parallel program releases} into production.}
+        % \item\small
+        %   {Collaborated with the Product Manager to understand requirements and worked with the DevOps team to set up infrastructure for \textbf{notification} and \textbf{site-control} features.}
+        % \item\small
+        %   {Committed to writing clean, maintainable and readable code that is unit tested, with a focus on efficiency and scalability.}
+        % \item\small
+        %   {Worked with the Enphase data team to develop a dashboard in \textbf{AWS QuickSight} for Grid Services, enabling Product Managers and the Customer Support team to more effectively understand and analyze production issues.}
       \resumeItemListEnd
-
   \resumeSubHeadingListEnd
-
+  
   %-----------SKILLS-----------------
 \section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Java, C++, Python, Javascript}
+      {Java, C++, Python}
     \resumeSubItem{Technologies}
-      {AWS, Spring Boot, Spring MVC, MongoDB, Redis, Git, Kubernetes, Jenkins, Datadog, Jmeter, Pytorch, React.js(Basic), Node.js(Basic), Express.js(Basic), Socket.io(Basic)}
+      {Spring Boot, Spring MVC, RESTful APIs, Maven, Gradle, MongoDB, AWS, Redis, Git, Kubernetes, Jenkins, Datadog, Jmeter}
     \resumeSubItem{Others}
-      {RESTful APIs, OOP, Data Structure, Algorithm}
+      {Cloud Engineering, OOP, Data Structure, Algorithm}
+  \resumeSubHeadingListEnd
+
+  
+  %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur}{CGPA: 9.16/10}
+      {M.Tech in Instrumentation and Signal Processing}{Sep 2020 -- May 2022}
+      {\\[0.1\baselineskip]}
+      \resumeSubSubheading
+        {(Project in Image Processing using Federated Deep Learning)}
+      \resumeSubSubheading
+    \resumeSubheading
+      {Jadavpur University, Kolkata}{CGPA: 9.15/10}
+      {B.E. in Electrical Engineering}{Jul 2016 -- Aug 2020}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{\textit{Discussion Forum} (\href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{\textcolor{blue}{Github}}, \href{https://question-answer-forum-doconnect.onrender.com}{\textcolor{blue}{Render.com}})}
-      {Developed a question-answer-forum website called DoConnect. The frontend was built using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{JavaScript} and \textbf{React.js}, while the backend was implemented with \textbf{Node.js} and the \textbf{Express.js} framework. \textbf{MongoDB} serves as the database. Additionally, the app includes a chat feature, which was created using \textbf{Socket.io}.}
-    % {\\[1\baselineskip]}
-    \resumeSubItem{\textit{Pizza Store} (\href{https://github.com/Kingshuk99/pizza-store}{\textcolor{blue}{Github}}, \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}})}
-      {Developed a Website for a Pizza store using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{Javascript} and \textbf{React.js}. A JSON server was utilized to store data and create mock APIs. \textbf{Role-Based Access Control (RBAC)} was implemented to manage access for both admin and user roles.}
-    % {\\[1\baselineskip]}
-    \resumeSubItem{\textit{Chat Application} (\href{https://github.com/Kingshuk99/simple-chat-app}{\textcolor{blue}{Github}})}
-      {Developed a simple real-time chat application using \textbf{React.js}, \textbf{JavaScript}, and \textbf{CSS} for frontend. The backend was built using \textbf{Node.js} and \textbf{Express.js}, with real-time communication enabled through \textbf{Socket.io}.}
-    % {\\[1\baselineskip]}
-    \resumeSubItem{\textit{Model Verifiability in Federated Learning} (\href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning-}{\textcolor{blue}{Github}})}
-      {In \textbf{Federated Learning}, the vanilla federated averaging algorithm performs poorly when malicious clients are present. Here, a stochastic federated averaging technique has been implemented which can detect and reduce the effects of malicious clients while aggregating the models in the server. Used technologies - \textbf{Python}, \textbf{Pytorch}, \textbf{Deep learning}.}
+    \resumeSubItem{\textit{Model Verifiability in Federated Learning (M.Tech Project)}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning}{Github}}
+        \resumeItemListStart
+            \item\small 
+            {Standard federated averaging algorithm struggles with malicious clients; hence formulated and implemented a \textbf{stochastic federated averaging} algorithm to detect and mitigate their impact.}
+            \item\small 
+            {\textbf{Technologies}: Python, PyTorch, Deep Learning; \textbf{dataset}: DRIVE(Digital Retinal Images for Vessel Extraction).}
+        \resumeItemListEnd
+    \resumeSubItem{\textit{Discussion Forum}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{Github}, \faIcon{server} \href{https://question-answer-forum-doconnect.onrender.com}{Render.com}}
+        \resumeItemListStart
+            \item\small 
+            {Developed DoConnect, a question-answer forum website.}
+            \item\small 
+            {\textbf{Frontend technologies}: React.js, JavaScript, CSS, Bootstrap; \textbf{backend technologies}: JavaScript, Node.js, Express.js; \textbf{database}: MongoDB; \textbf{chat feature}: Socket.io.}
+        \resumeItemListEnd
+    \resumeSubItem{\textit{Pizza Store}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/pizza-store}{Github}, \faIcon{server} \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}}}
+        \resumeItemListStart
+            \item\small 
+            {Developed a pizza store website using React.js, JavaScript, CSS and Bootstrap.}
+            \item\small 
+            {Used a JSON server for data storage and mock APIs.}
+        \resumeItemListEnd
+    \resumeSubItem{\textit{Chat Application}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/chat-application}{Github}}
+        \resumeItemListStart
+            \item\small 
+            {Developed a real-time chat application with React.js, JavaScript, and CSS for frontend.}
+            \item\small 
+            {Used Javascript, Node.js and Express.js for backend and Socket.io for chat feature.}
+        \resumeItemListEnd
   \resumeSubHeadingListEnd
+  
+% %-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%   \resumeSubItem{\textit{Model Verifiability in Federated Learning (M.Tech Project)} (\href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning-}{\textcolor{blue}{Github}})}
+%       {In \textbf{Federated Learning}, the vanilla federated averaging algorithm performs poorly when malicious clients are present. Here, a stochastic federated averaging technique has been implemented which can detect and reduce the effects of malicious clients while aggregating the models in the server. Used technologies - \textbf{Python}, \textbf{Pytorch}, \textbf{Deep learning}.}
+%       % {\\[1\baselineskip]}
+%   \resumeSubItem{\textit{Discussion Forum} (\href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{\textcolor{blue}{Github}}, \href{https://question-answer-forum-doconnect.onrender.com}{\textcolor{blue}{Render.com}})}
+%       {Developed a question-answer-forum website called DoConnect. The frontend was built using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{JavaScript} and \textbf{React.js}, while the backend was implemented with \textbf{Node.js} and the \textbf{Express.js} framework. \textbf{MongoDB} serves as the database. Additionally, the app includes a chat feature, which was created using \textbf{Socket.io}.}
+%     % {\\[1\baselineskip]}
+%     \resumeSubItem{\textit{Pizza Store} (\href{https://github.com/Kingshuk99/pizza-store}{\textcolor{blue}{Github}}, \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}})}
+%       {Developed a Website for a Pizza store using \textbf{HTML}, \textbf{CSS}, \textbf{Bootstrap}, \textbf{Javascript} and \textbf{React.js}. A JSON server was utilized to store data and create mock APIs. \textbf{Role-Based Access Control (RBAC)} was implemented to manage access for both admin and user roles.}
+%     % {\\[1\baselineskip]}
+%     \resumeSubItem{\textit{Chat Application} (\href{https://github.com/Kingshuk99/simple-chat-app}{\textcolor{blue}{Github}})}
+%       {Developed a simple real-time chat application using \textbf{React.js}, \textbf{JavaScript}, and \textbf{CSS} for frontend. The backend was built using \textbf{Node.js} and \textbf{Express.js}, with real-time communication enabled through \textbf{Socket.io}.}
+%   \resumeSubHeadingListEnd
   
 %-------------------------------------------
 \end{document}

@@ -97,11 +97,11 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Kingshuk Sadhu}}
-  & \color{blue} \faIcon{envelope} \href{mailto:kingshuksadhu1999@gmail.com}{{kingshuksadhu1999@gmail.com}}\\
-  \color{blue} \faIcon{globe} \href{https://kingshuk-sadhu.tech/}{{kingshuk-sadhu.tech}}
-  & \color{blue} \faIcon{linkedin} \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{{visit-kingshuksadhu}} \\
-  \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99}{Kingshuk99} 
-  & \color{blue} \faIcon{phone} \href{tel:+918597292797}{{+91-8597292797}} \\
+  & Email: \href{mailto:kingshuksadhu1999@gmail.com}{\textcolor{blue}{kingshuksadhu1999@gmail.com}}\\
+  Website: \href{https://kingshuk-sadhu.tech/}{\textcolor{blue}{kingshuk-sadhu.tech}}
+  & LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{visit-kingshuksadhu}} \\
+  Github: \href{https://github.com/Kingshuk99}{\textcolor{blue}{Kingshuk99}}
+  & Phone: \href{tel:+918597292797}{\textcolor{blue}{+91-8597292797}} \\
 \end{tabular*}
 
 %-----------EXPERIENCE-----------------
@@ -115,23 +115,25 @@
       % {\textbf{Technologies} - Java, Spring Boot, MongoDB, AWS, Redis}
       \resumeItemListStart
         \item\small
-          {Automated a business requirement to generate a monthly report on the average discharge energy for Grid Services programs using a \textbf{Quartz scheduler}. Reports are uploaded to the \textbf{SFTP} server and \textbf{AWS S3} storage.}
+          {Automated monthly reports on average discharge energy for Grid Services programs using \textbf{Quartz scheduler}. Reports are uploaded to \textbf{SFTP} server and \textbf{AWS S3}, reducing manual effort.}
           \item\small
-          {Designed and led the development of \textbf{site-control} feature to enables users to create multi-asset events driven by an intelligent algorithm. \textbf{Asynchronous} queues and topics (\textbf{AWS SQS} and \textbf{SNS}) are used to create real-time events.}
+          {Designed and led the development of \textbf{site-control} feature to enable users to create multi-asset events driven by an intelligent algorithm. Used \textbf{Asynchronous} queues and topics (\textbf{AWS SQS} and \textbf{SNS}) to create real-time events.}
         \item\small
-          {Designed and led the development of a Notification Service. Used \textbf{asynchronous} messaging (using \textbf{AWS SQS} and \textbf{SNS}) between API servers and notification service. The notifications are filtered according to user preferences for both \textbf{emails} and in-app \textbf{alerts}.}
+          {Designed a Notification Service with \textbf{asynchronous} messaging via \textbf{AWS} \textbf{SQS} and \textbf{SNS}, supporting \textbf{email} and \textbf{in-app} alerts based on user preferences. Collaborated with Product Manager, DevOps and Quality Assurance team.}
         \item\small
-          {Successfully optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing their P95 latencies under 200 ms.}
+          {Optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing their \textbf{P95} latencies to under 200 ms.}
         \item\small
           {Integrated \textbf{Redis} as a caching layer for Role-Based Access Control (\textbf{RBAC}) lists in microservices to optimize latency, alongside database \textbf{query optimization}, \textbf{indexing} and \textbf{pagination}.}
         \item\small
           {Designed and implemented \textbf{Dynamic Form} that stores metadata about a program’s form. The form’s properties can be configured by the admin. This has reduced the onboarding time for new partners.}
         \item\small
-          {Upgraded two microservices from Spring Boot 2 to Spring Boot 3.}
+          {Implemented \textbf{Scheduler Locking} to ensure cron jobs execute on only one node at a time by using a shared database across worker nodes, allowing for lock acquisition by only one node.}
         % \item\small
         %   {Devised a new git branching strategy to accommodate \textbf{parallel program releases} into production.}
         % \item\small
-        %   {Collaborated with the Product Manager to understand requirements and worked with the DevOps team to set up infrastructure for \textbf{notification} and \textbf{site-control} features.}
+        %   {Worked with the Product Manager to gather requirements, collaborated with DevOps on infrastructure setup, coordinated with QA and System Integration teams on testing, and implemented notification and site-control features with the development team.}
+        \item\small
+          {Upgraded two \textbf{microservices} from Spring Boot 2 to Spring Boot 3 to reduce security threats and address vulnerabilities in the older version.}
         % \item\small
         %   {Committed to writing clean, maintainable and readable code that is unit tested, with a focus on efficiency and scalability.}
         % \item\small
@@ -144,9 +146,9 @@
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
       {Java, C++, Python}
-    \resumeSubItem{Technologies}
+    \resumeSubItem{Frameworks \& Technologies:}
       {Spring Boot, Spring MVC, RESTful APIs, Maven, Gradle, MongoDB, AWS, Redis, Git, Kubernetes, Jenkins, Datadog, Jmeter}
-    \resumeSubItem{Others}
+    \resumeSubItem{Concepts \& Practices}
       {Cloud Engineering, OOP, Data Structure, Algorithm}
   \resumeSubHeadingListEnd
 
@@ -169,33 +171,29 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{\textit{Model Verifiability in Federated Learning (M.Tech Project)}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning}{Github}}
+    \resumeSubItem{\textit{Model Verifiability in Federated Learning (M.Tech Project)}}{\hfill \href{https://github.com/Kingshuk99/Model-verifiability-in-federated-learning}{\textcolor{blue}{GitHub}}}
         \resumeItemListStart
             \item\small 
             {Standard federated averaging algorithm struggles with malicious clients; hence formulated and implemented a \textbf{stochastic federated averaging} algorithm to detect and mitigate their impact.}
             \item\small 
             {\textbf{Technologies}: Python, PyTorch, Deep Learning; \textbf{dataset}: DRIVE(Digital Retinal Images for Vessel Extraction).}
         \resumeItemListEnd
-    \resumeSubItem{\textit{Discussion Forum}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{Github}, \faIcon{server} \href{https://question-answer-forum-doconnect.onrender.com}{Render.com}}
+    \resumeSubItem{\textit{Discussion Forum}}{\hfill \href{https://github.com/Kingshuk99/question-answer-forum-doConnect}{\textcolor{blue}{GitHub}}, \href{https://question-answer-forum-doconnect.onrender.com}{\textcolor{blue}{Render.com}}}
         \resumeItemListStart
             \item\small 
             {Developed DoConnect, a question-answer forum website.}
             \item\small 
             {\textbf{Frontend technologies}: React.js, JavaScript, CSS, Bootstrap; \textbf{backend technologies}: JavaScript, Node.js, Express.js; \textbf{database}: MongoDB; \textbf{chat feature}: Socket.io.}
         \resumeItemListEnd
-    \resumeSubItem{\textit{Pizza Store}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/pizza-store}{Github}, \faIcon{server} \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}}}
+    \resumeSubItem{\textit{Pizza Store}}{\hfill \href{https://github.com/Kingshuk99/pizza-store}{\textcolor{blue}{GitHub}}, \href{https://pizza-store-cjg4.onrender.com}{\textcolor{blue}{Render.com}}}
         \resumeItemListStart
             \item\small 
-            {Developed a pizza store website using React.js, JavaScript, CSS and Bootstrap.}
-            \item\small 
-            {Used a JSON server for data storage and mock APIs.}
+            {Built a pizza store website using React.js, JavaScript, and CSS with a JSON server for data storage and mock APIs.}
         \resumeItemListEnd
-    \resumeSubItem{\textit{Chat Application}}{\hfill \color{blue} \faIcon{github} \href{https://github.com/Kingshuk99/chat-application}{Github}}
+    \resumeSubItem{\textit{Chat Application}}{\hfill \href{https://github.com/Kingshuk99/chat-application}{\textcolor{blue}{GitHub}}}
         \resumeItemListStart
             \item\small 
-            {Developed a real-time chat application with React.js, JavaScript, and CSS for frontend.}
-            \item\small 
-            {Used Javascript, Node.js and Express.js for backend and Socket.io for chat feature.}
+            {Developed a real-time chat app with React.js and Socket.io for chat features; backend built with Node.js and Express.js.}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
   

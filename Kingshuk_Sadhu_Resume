@@ -95,12 +95,31 @@
 %   {\raisebox{-0.35ex}{\includegraphics[width=2.5ex]{LinkedIn-InBug-2C}}
 % linked.in/johndoe} \\
 %----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{{\Large Kingshuk Sadhu}}
+%   & Email: \href{mailto:kingshuksadhu1999@gmail.com}{\textcolor{blue}{kingshuksadhu1999@gmail.com}}\\
+%   Website: \href{https://kingshuk-sadhu.tech/}{\textcolor{blue}{kingshuk-sadhu.tech}}
+%   & LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{visit-kingshuksadhu}} \\
+%   Github: \href{https://github.com/Kingshuk99}{\textcolor{blue}{Kingshuk99}}
+%   & Phone: \href{tel:+918597292797}{\textcolor{blue}{+91-8597292797}} \\
+% \end{tabular*}
+
+
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{{\Large Kingshuk Sadhu}}
+%   & Email: kingshuksadhu1999@gmail.com\\
+%   Website: https://kingshuk-sadhu.tech/
+%   & LinkedIn: https://www.linkedin.com/in/visit-kingshuksadhu/ \\
+%   Github: https://github.com/Kingshuk99
+%   & Phone: +918597292797 \\
+% \end{tabular*}
+
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Kingshuk Sadhu}}
   & Email: \href{mailto:kingshuksadhu1999@gmail.com}{\textcolor{blue}{kingshuksadhu1999@gmail.com}}\\
-  Website: \href{https://kingshuk-sadhu.tech/}{\textcolor{blue}{kingshuk-sadhu.tech}}
-  & LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{visit-kingshuksadhu}} \\
   Github: \href{https://github.com/Kingshuk99}{\textcolor{blue}{Kingshuk99}}
+  & LinkedIn: \href{https://www.linkedin.com/in/visit-kingshuksadhu/}{\textcolor{blue}{visit-kingshuksadhu}} \\
+  Leetcode: \href{https://leetcode.com/u/kingshuksadhu1999/}{\textcolor{blue}{kingshuksadhu1999}}
   & Phone: \href{tel:+918597292797}{\textcolor{blue}{+91-8597292797}} \\
 \end{tabular*}
 
@@ -114,14 +133,16 @@
       % {\\[1\baselineskip]}
       % {\textbf{Technologies} - Java, Spring Boot, MongoDB, AWS, Redis}
       \resumeItemListStart
+      \item\small
+          {Implemented a \textbf{Rate Limiter} in the API Gateway microservice using Spring Cloud Redis to prevent DDoS attacks.}
         \item\small
           {Automated monthly reports on average discharge energy for Grid Services programs using \textbf{Quartz scheduler}. Reports are uploaded to \textbf{SFTP} server and \textbf{AWS S3}, reducing manual effort.}
-          \item\small
+        \item\small
           {Designed and led the development of \textbf{site-control} feature to enable users to create multi-asset events driven by an intelligent algorithm. Used \textbf{Asynchronous} queues and topics (\textbf{AWS SQS} and \textbf{SNS}) to create real-time events.}
         \item\small
           {Designed a Notification Service with \textbf{asynchronous} messaging via \textbf{AWS} \textbf{SQS} and \textbf{SNS}, supporting \textbf{email} and \textbf{in-app} alerts based on user preferences. Collaborated with Product Manager, DevOps and Quality Assurance team.}
         \item\small
-          {Optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps) in Grid Services, reducing their \textbf{P95} latencies to under 200 ms.}
+          {Optimized the latencies of 10 high-traffic APIs ($\sim$ 150-250 rps), reducing their \textbf{P95} latencies to under 200 ms.}
         \item\small
           {Integrated \textbf{Redis} as a caching layer for Role-Based Access Control (\textbf{RBAC}) lists in microservices to optimize latency, alongside database \textbf{query optimization}, \textbf{indexing} and \textbf{pagination}.}
         \item\small
